@@ -5,6 +5,20 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+  const [isBuilding, setIsBuilding] = useState(true);
+
+  if (isBuilding) {
+    return (
+      <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white text-center">
+        <h1 className="text-5xl font-extrabold mb-6 animate-pulse tracking-wide">
+          💈 BookingHair 💈
+        </h1>
+        <p className="text-xl mb-4 text-gray-300">Estamos preparando algo especial...</p>
+        <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeHVneWI0a21jYW90bWs3bmR1cjdoYmlxYm50NTB3dW94dzhxZTF1ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/mOtjMDSDyZQ3u/giphy.gif" alt="" />
+        <div className="mt-10 w-20 h-20 border-4 border-t-transparent border-white rounded-full animate-spin"></div>
+      </div>
+    )
+  }
 
   return (
     <>
