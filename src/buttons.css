@@ -1,0 +1,33 @@
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    height: 30rem;
+    width: 25rem;
+    border-radius: 0.5rem;
+    align-content: center;
+    justify-items: center;
+    background-color: #181818;
+}
+
+form h2{
+    font-size: 2em;
+}
+
+form p{
+    color: #717171;
+}
+
+form a strong {
+    cursor: default;
+    color: white;
+}
+
+form input {
+    width: 12rem;
+    background-color: #111111;
+}
+
+form button {
+    background-color: #0173DD;
+}
